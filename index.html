@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farm2Community</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      html {
+        box-sizing: -box; /* The layout game-changer */
+        /*max-width: 70ch; /* Magic readable width */
+        margin: auto; /* Auto-centering sorcery */
+        font-size: 1.05em;
+        color: #070707;
+        line-height: 1.3s; /* Breathe, beautiful text */
+      }
+      /*body {
+        color: #070707;
+      }*/
+      * {
+        box-sizing: inherit;
+      } /* No more math headaches */
+      img {
+        max-width: 100%;
+      } /* Responsive without @media */
+      a {
+        text-decoration: none; /* Clean links */
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(242, 187, 7);
+        text-decoration-thickness: 15%;
+      }
+      .btn-cust {
+         border:3px rgba(5, 66, 5, 0.949) solid;
+
+        background-color: rgba(5, 66, 5, 0.949);
+        color: rgb(242, 187, 7);
+        font-weight: 700;
+      }
+      .btn-cust-2 {
+         border:3px rgba(5, 66, 5, 0.949) solid;
+        color: rgba(5, 66, 5, 0.949);
+        font-weight: 500;
+      }
+      .btn-cust-21 {
+         border:3px rgb(242, 187, 7) solid;
+
+        background-color: rgb(242, 187, 7);
+        color: rgba(5, 66, 5, 0.949);
+        font-weight: 700;
+      }
+      .btn-cust-22 {
+        border: 3px rgb(242, 187, 7) solid;
+        color: rgb(242, 187, 7);
+        font-weight: 500;
+      }
+      .t-cust {
+        font-size: 4.5rem;
+        line-height: 1.2;
+      }
+      .t-cust-2 {
+        font-size: 2.6rem;
+        line-height: 1;
+      }
+      .tc-1 {
+        color: rgba(5, 66, 5, 0.949);
+      }
+      .tc-2 {
+        color: rgb(242, 187, 7);
+      }
+      .bc-1 {
+        background-color: rgba(5, 66, 5, 0.949);
+      }
+      .bc-2 {
+        background-color: rgb(242, 187, 7);
+      }
+      .main-img {
+        height: 100%;
+        width: 70%;
+      }
+      .smalltext {
+        font-size: 0.9rem;
+      }
+      .c-color {
+        background: linear-gradient(rgba(242, 187, 7, 0.94), rgb(242, 187, 7));
+      }
+      .cimg {
+        height: 200px;
+        width: 300px;
+      }
+      .zoom-hover {
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+      }
+      .zoom-hover img {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .zoom-hover:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="container-fluid p-0 sticky-top">
+      <nav
+        class="navbar container-fluid navbar-expand-lg bg-body color-dark bg-light shadow-sm m-0 "
+      >
+        <div class="container-fluid">
+          <div class="d-flex flex-row">
+            <a class="navbar-brand" href="#"
+              ><img src="tlogo.png" alt="" height="55px" width="55px" class=""
+            /></a>
+            <button
+              type="button"
+              class="btn my-3 py-0 btn-cust"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title=""
+            >
+              Farm2Community
+            </button>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarTogglerDemo02"
+          >
+            <ul class="navbar-nav mb-2 mx-5 mb-lg-0 gap-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark fw-bold"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="login.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="accountcreate.html">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#how">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-cust" href="products.html">Shop Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- firstcontainer -->
+    <div class="">
+      <div class="container d-flex flex-row px-1 py-5">
+        <div class="fw-bolder w-50 mx-1">
+          <p class="t-cust">
+            <span class="tc-1">Empowering <br />Farmers,<br /></span>
+            <span class="tc-2">Connecting <br />Communities</span>
+          </p>
+          <p class="fw-normal texr-medium text-dark mx-2">
+            Buy fresh produce directly from verified farmers. Transparent
+            pricing, instant farmer payouts, and community bulk orders that
+            reduce delivery costs
+          </p>
+          <div class="text-start">
+            <a href="" class="btn btn-cust mx-2 p-2">Explore Produce </a
+            ><a href="" class="btn btn-cust-2 mx-2 p-2"
+              >Create Community Order</a
+            >
+          </div>
+          <div class="py-3 smalltext">
+            <ul class="d-flex flex-row gap-5">
+              <li class="fw-normal">Verified Farmers</li>
+              <li class="fw-normal">Next-day Delivery</li>
+              <li class="fw-normal">Flat/Community Friendly</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-50 py-5 position-relative d-inline-block">
+          <img
+            src="img-1.webp"
+            class="rounded float-end main-img shadow-lg"
+            alt="Wooden box with different vegetables"
+          />
+          <div
+            class="btn btn-cust-2 rounded-4 position-absolute bottom-0 start-0 bg-light m-4 bg-opacity-75 fw-bolder"
+          >
+            Farm-to-Home in 12-24h <br />
+            Sourced within 50 km radius
+          </div>
+        </div>
+      </div>
+      <!-- second -->
+      <div class="container d-flex flex-row btn-cust rounded-4 p-4 mb-5">
+        <div class="w-50 px-3">
+          <div class="text-light">
+            <p class="t-cust-2">Create a Community Order</p>
+            <p class="fw-light">
+              Organize a bulk order for your apartment or neighborhood. Save on
+              delivery fees and support local farmers with guaranteed sales.
+            </p>
+            <div class="text-start">
+              <a href="" class="btn btn-cust-21 mx-2 p-2">Create </a
+              ><a href="" class="btn btn-cust-22 mx-2 p-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-50 py-4 mx-5 tc-1">
+          <div class="m-1 rounded-4 fw-normal c-color bg-opacity-25">
+            <ul
+              class="px-5 py-2 d-flex flex-column align-content-center fw-medium" id="how"
+            >
+              <li>One checkout for multiple flats</li>
+              <li>Slot-based delivery to your society gate</li>
+              <li>Transparent split payments & receipts</li>
+              <li>Priority support for community leads</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- three -->
+      <div class="container d-flex flex-column mb-5">
+        <div class="text-center">
+          <p class="t-cust-2 fw-bolder tc-1">How Farm2Community Works</p>
+          <p class="text-dark">Simple, transparent, and farmer first.</p>
+        </div>
+        <div>
+          <div class="row my-2">
+            <div class="col mb-3 mb-sm-0">
+              <div class="card h-100 btn-cust-2 mx-2">
+                <div class="card-body text-center px-5 py-3">
+                  <h5 class="card-title fw-bolder">Farmers List</h5>
+                  <p class="card-text text-black fw-normal">
+                    Farmers post harvest with price & quantity.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 btn-cust-2 mx-2">
+                <div class="card-body text-center px-5 py-3">
+                  <h5 class="card-title fw-bolder">Communities Order</h5>
+                  <p class="card-text text-black fw-normal">
+                    Flats/group orders lower delivery cost.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 btn-cust-2 mx-2">
+                <div class="card-body text-center px-5 py-3">
+                  <h5 class="card-title fw-bolder">Transparent Pricing</h5>
+                  <p class="card-text text-black fw-normal">
+                    See farmer price + delivery + small fee.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 btn-cust-2 text-center mx-2">
+                <div class="card-body text-center px-5 py-3">
+                  <h5 class="card-title fw-bolder">Fast Delivery</h5>
+                  <p class="card-text text-black fw-normal">
+                    Pickup from farms, deliver next day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- four -->
+      <div class="container p-4 mb-4">
+        <div class="d-flex flex-column">
+          <div class="text-center">
+            <p class="t-cust-2 fw-bolder tc-1">Fresh & Organic Produce</p>
+            <p class="text-dark">Hand-picked from nearby farms</p>
+          </div>
+          <div class="d-flex mt-2 flex-row justify-content-between">
+            <div>
+              <a href="" class=""
+                ><div class="card border-2 shadow-sm rounded-5" style="width: 17rem">
+                 <div class=""> <div class="h-75 ">
+                    <img
+                      src="img-5.jpg"
+                      class="card-img-top cimg w-100 rounded-top-5"
+                      alt="catagoryimage"
+                    />
+                  </div>
+                  <div class="card-body py-2 h-25 border-1 d-flex text-center flex-column">
+                    <h5 class="card-title tc-1">Tomatoes</h5>
+                    <a href="#" class="btn">Shop</a>
+                  </div></div>
+                </div></a
+              >
+            </div>
+            <div>
+              <a href="" class=""
+                ><div class="card border-2 shadow-sm rounded-5" style="width: 17rem">
+                 <div class=""> <div class="h-75">
+                    <img
+                      src="img-4.jpg"
+                      class="card-img-top cimg w-100 rounded-top-5"
+                      alt="catagoryimage"
+                    />
+                  </div>
+                  <div class="card-body py-2 h-25 border-1 d-flex text-center flex-column">
+                    <h5 class="card-title tc-1">Carrots</h5>
+                    <a href="#" class="btn">Shop</a>
+                  </div></div>
+                </div></a
+              >
+            </div>
+            <div>
+              <a href="" class=""
+                ><div class="card border-2 shadow-sm rounded-5" style="width: 17rem">
+                 <div class=""> <div class="h-75">
+                    <img
+                      src="img-3.jpg"
+                      class="card-img-top cimg w-100 rounded-top-5"
+                      alt="catagoryimage"
+                    />
+                  </div>
+                  <div class="card-body py-2 h-25 border-1 d-flex text-center flex-column">
+                    <h5 class="card-title tc-1">Leafy Greens</h5>
+                    <a href="#" class="btn">Shop</a>
+                  </div></div>
+                </div></a
+              >
+            </div><div>
+              <a href="" class=""
+                ><div class="card border-2 shadow-sm rounded-5" style="width: 17rem">
+                 <div class=""> <div class="h-75">
+                    <img
+                      src="img-2.jpg"
+                      class="card-img-top cimg w-100 rounded-top-5"
+                      alt="catagoryimage"
+                    />
+                  </div>
+                  <div class="card-body py-2 h-25 border-1 d-flex text-center flex-column">
+                    <h5 class="card-title tc-1">Grains & Pulses</h5>
+                    <a href="#" class="btn">Shop</a>
+                  </div></div>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- five -->
+      <div class="container mb-5">
+        <div class="text-center">
+          <p class="t-cust-2 fw-bolder tc-1">Talk to Us</p>
+          <p class="fw-normal">Onboard your farm or set up a community order</p>
+        </div>
+        <div class="text-center">
+          <form action="" class="text-dark">
+            <div class="container d-flex flex-column gap-2 px-5 w-50">
+              <input type="text" name="name" id="" placeholder="Name" class="p-2 rounded-2 shadow-sm btn-cust-2 my-1">
+              <input type="text" name="eorp" id="" placeholder="Email or Phone Number" class="p-2 my-1 rounded-2 shadow-sm btn-cust-2">
+              <select type="text" name="typeofperson" id="" placeholder="" class="p-2 my-1 rounded-2 text-dark shadow-sm btn-cust-2">
+                <option value="Farmer">I am a Farmer</option>
+                <option value="Community">I represent a Community/Flat</option>
+                <option value="Customer">I am a Customer</option>
+              </select>
+              <input type="text" name="mesg" id="" class="p-2 my-1 rounded-2 shadow-sm btn-cust-2" placeholder="Your Message" >
+              <input type="submit" value="Submit" class="btn btn-cust">
+            </div>  
+        </div>
+      </div>
+      <!-- six -->
+       <div class="text-light bc-1 d-flex flex-column" id="contact">
+        <div class="d-flex flex-row justify-content-around p-3 mx-5 ">
+        <div class="p-2"> <br>
+          <p class="t-cust-2 fw-bolder">Farm2<span class="tc-2">Community</span></p>
+          <p class="smalltext">Where farmers win their market. Fresh, fair, and local.</p>
+        </div>
+        <div class="p-2 text-light">
+          <p class="fw-bolder fs-4">Explore</p>
+          <ul class="list-unstyled">
+            <a href="" class="text-light">
+              <li>Produce</li>
+            </a>
+            <a href="" class="text-light">
+              <li>Community Orders</li>
+            </a>
+            <a href="" class="text-light">
+              <li >How it Works</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-2">
+          <p class="fw-bolder fs-4">Contact</p>
+          <p class="fw-normal">support@kisankshetra.in</p>
+          <p class="fw-normal">
++9112345623</p>
+        </div>
+       </div>
+    </div>
+           <div class="text-light bc-1 bg-opacity-25 position-sticky-buttom position-sticky-bottom text-center p-1">&copy; 2025 Farm2Community. All rights reserved.</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
