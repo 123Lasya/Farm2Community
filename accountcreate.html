@@ -37,26 +37,26 @@
         text-decoration-color: rgb(242, 187, 7);
         text-decoration-thickness: 15%;
       }
-      .btn-cust {
+      .btn-cust,.btn-cust:hover,.btn-cust:focus,.btn-cust:active,.btn-cust:focus:active {
          border:3px rgba(5, 66, 5, 0.949) solid;
 
         background-color: rgba(5, 66, 5, 0.949);
         color: rgb(242, 187, 7);
         font-weight: 700;
       }
-      .btn-cust-2 {
-         border:3px rgba(5, 66, 5, 0.949) solid;
+     
+      .btn-cust-2, .btn-cust-2:hover, .btn-cust-2:focus,.btn-cust-2:focus:active,.btn-cust-2:active{
+        border:3px rgba(5, 66, 5, 0.949) solid;
         color: rgba(5, 66, 5, 0.949);
         font-weight: 500;
       }
-      .btn-cust-21 {
+      .btn-cust-21,.btn-cust-21:hover,.btn-cust-21:focus,.btn-cust-21:active,.btn-cust-21:focus:active{
          border:3px rgb(242, 187, 7) solid;
-
         background-color: rgb(242, 187, 7);
         color: rgba(5, 66, 5, 0.949);
         font-weight: 700;
       }
-      .btn-cust-22 {
+      .btn-cust-22,.btn-cust-22:hover,.btn-cust-22:focus,.btn-cust-22:active,.btn-cust-22:focus:active{
         border: 3px rgb(242, 187, 7) solid;
         color: rgb(242, 187, 7);
         font-weight: 500;
@@ -106,9 +106,10 @@
       .zoom-hover:hover img {
         transform: scale(1.1);
       }
+      
     </style>
   </head>
-  <body class="min-vh-100 border">
+  <body class="min-vh-100 border ">
     <!--navbar-->
     <div class="container-fluid p-0 sticky-top">
       <nav
@@ -116,7 +117,7 @@
       >
         <div class="container-fluid">
           <div class="d-flex flex-row">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="index.html"
               ><img src="tlogo.png" alt="" height="55px" width="55px" class=""
             /></a>
             <button
@@ -168,16 +169,15 @@
       </nav>
     </div>
     <!-- second -->
-     <div class="container m-5">
+    <div class="text-center"> <div class="container my-4 mx-auto">
         <div class="text-center">
-        <p class="t-cust-2 fw-bolder tc-1 my-2">Sign Up </p>
+        <p class="t-cust-2 fw-bolder tc-1 my-1">Sign Up </p>
 
           <p class="smalltext fw-normal tc-1 mb-3 mt-0">Empowering Farmers, Connecting Communities </p>
         </div>
         <div class="text-center">
-          <form action="" class="text-dark w-50 m-auto">
+          <form action="sucesssignup.html" class="text-dark w-50 m-auto">
             <div class="container d-flex flex-column gap-2 w-75 ">
-              <input type="text" name="Uname" id="" placeholder="User Name" class="p-2 rounded-2 shadow-sm btn-cust-2 my-1">
               <input type="text" name="Name" id="" placeholder="Name" class="p-2 rounded-2 shadow-sm btn-cust-2 my-1">
               <input type="email" name="Email" id="" placeholder="Email" class="p-2 rounded-2 shadow-sm btn-cust-2 my-1">
               <input type="tel" name="Pno" id="" placeholder="Phone Number" class="p-2 my-1 rounded-2 shadow-sm btn-cust-2">
@@ -192,7 +192,7 @@
               <input type="submit" value="Submit" class="btn btn-cust">
             </div>  
         </div>
-      </div>
+      </div></div>
   <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

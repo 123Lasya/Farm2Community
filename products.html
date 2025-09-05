@@ -37,26 +37,42 @@
         text-decoration-color: rgb(242, 187, 7);
         text-decoration-thickness: 15%;
       }
-      .btn-cust {
+      .btn-cust,
+      .btn-cust:hover,
+      .btn-cust:focus,
+      .btn-cust:active,
+      .btn-cust:focus:active {
         border: 3px rgba(5, 66, 5, 0.949) solid;
 
         background-color: rgba(5, 66, 5, 0.949);
         color: rgb(242, 187, 7);
         font-weight: 700;
       }
-      .btn-cust-2 {
+
+      .btn-cust-2,
+      .btn-cust-2:hover,
+      .btn-cust-2:focus,
+      .btn-cust-2:focus:active,
+      .btn-cust-2:active {
         border: 3px rgba(5, 66, 5, 0.949) solid;
         color: rgba(5, 66, 5, 0.949);
         font-weight: 500;
       }
-      .btn-cust-21 {
+      .btn-cust-21,
+      .btn-cust-21:hover,
+      .btn-cust-21:focus,
+      .btn-cust-21:active,
+      .btn-cust-21:focus:active {
         border: 3px rgb(242, 187, 7) solid;
-
         background-color: rgb(242, 187, 7);
         color: rgba(5, 66, 5, 0.949);
         font-weight: 700;
       }
-      .btn-cust-22 {
+      .btn-cust-22,
+      .btn-cust-22:hover,
+      .btn-cust-22:focus,
+      .btn-cust-22:active,
+      .btn-cust-22:focus:active {
         border: 3px rgb(242, 187, 7) solid;
         color: rgb(242, 187, 7);
         font-weight: 500;
@@ -120,7 +136,7 @@
       >
         <div class="container-fluid">
           <div class="d-flex flex-row">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="index.html"
               ><img src="tlogo.png" alt="" height="55px" width="55px" class=""
             /></a>
             <button
@@ -167,18 +183,13 @@
                   >Sign up</a
                 >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#how"
-                  >How it works</a
+                <a
+                  class="btn btn-cust text-decoration-none no-hover"
+                  href="products.html"
+                  >Shop Now</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#contact"
-                  >Contact</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-cust" href="products.html">Shop Now</a>
               </li>
             </ul>
           </div>
@@ -186,10 +197,10 @@
       </nav>
     </div>
     <div class="text-center w-100 m-auto">
-      <div class="input-group w-25 mt-5 mb-3 mx-auto">
+      <div class="input-group w-25 mt-5 mb-4 mx-auto">
         <input
           type="text"
-          class="form-control"
+          class="form-control border-2 p-2 shadow-sm btn-cust-2"
           placeholder="eg:- Tamato "
           aria-label="Recipient's username"
           aria-describedby="search"
@@ -219,128 +230,353 @@
           <button type="button" class="btn btn-cust-2 mx-2 py-1">Diary</button>
         </div>
       </div>
-      <div class="container">
-        <div
-          class="row row-cols-3 gy-3 d-flex flex-row justify-content-between"
-        >
-          <div
-            class="card border-0 shadow-sm rounded-5 col"
-            style="width: 17rem"
-          >
-            <div class="w-auto">
-              <div class="h-75">
-                <img
-                  src="img-5.jpg"
-                  class="card-img-top cimg w-100 rounded-top-5"
-                  alt="catagoryimage"
-                />
-              </div>
-              <div
-                class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
-              >
-                <h5 class="card-title tc-1">Tomatoes</h5>
-                <a href="#" class="btn">Shop</a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card border-0 shadow-sm rounded-5 col"
-            style="width: 17rem"
-          >
-            <div class="">
-              <div class="h-75">
-                <img
-                  src="img-5.jpg"
-                  class="card-img-top cimg w-100 rounded-top-5"
-                  alt="catagoryimage"
-                />
-              </div>
-              <div
-                class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
-              >
-                <h5 class="card-title tc-1">Tomatoes</h5>
-                <a href="#" class="btn">Shop</a>
+      <div class="container my-4">
+        <div class="row row-cols-5 d-flex justify-content-between gy-3">
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-5.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Tomatoes</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 mx-1"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card border-0 shadow-sm rounded-5 col"
-            style="width: 17rem"
-          >
-            <div class="">
-              <div class="h-75">
-                <img
-                  src="img-5.jpg"
-                  class="card-img-top cimg w-100 rounded-top-5"
-                  alt="catagoryimage"
-                />
-              </div>
-              <div
-                class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
-              >
-                <h5 class="card-title tc-1">Tomatoes</h5>
-                <a href="#" class="btn">Shop</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="card border-0 shadow-sm rounded-5 col"
-            style="width: 17rem"
-          >
-            <div class="">
-              <div class="h-75">
-                <img
-                  src="img-5.jpg"
-                  class="card-img-top cimg w-100 rounded-top-5"
-                  alt="catagoryimage"
-                />
-              </div>
-              <div
-                class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
-              >
-                <h5 class="card-title tc-1">Tomatoes</h5>
-                <a href="#" class="btn">Shop</a>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-4.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Carrots</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 mx-1"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card border-0 shadow-sm rounded-5 col"
-            style="width: 17rem"
-          >
-            <div class="">
-              <div class="h-75">
-                <img
-                  src="img-5.jpg"
-                  class="card-img-top cimg w-100 rounded-top-5"
-                  alt="catagoryimage"
-                />
-              </div>
-              <div
-                class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
-              >
-                <h5 class="card-title tc-1">Tomatoes</h5>
-                <a href="#" class="btn">Shop</a>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-3.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Leafy Green</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 mx-1"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card border-0 shadow-sm rounded-5 col"
-            style="width: 17rem"
-          >
-            <div class="">
-              <div class="h-75">
-                <img
-                  src="img-5.jpg"
-                  class="card-img-top cimg w-100 rounded-top-5"
-                  alt="catagoryimage"
-                />
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-12.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Broccoli</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 mx-1"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
-              <div
-                class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
-              >
-                <h5 class="card-title tc-1">Tomatoes</h5>
-                <a href="#" class="btn">Shop</a>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-13.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Apple</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 mx-1"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-16.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Lettuce</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 mx-1"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-8.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Potato</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 myx1o"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-9.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Cabbage</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 myx1o"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-11.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Onion</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cus-2 w-auto px-2 py-1 myx1o"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-10.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Spinach</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 myx1o"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-15.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Mango</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 myx1o"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card border-2 shadow-sm rounded-5 text-center"
+              style="width: 17rem"
+            >
+              <div class="">
+                <div class="h-75">
+                  <img
+                    src="img-14.jpg"
+                    class="card-img-top cimg w-100 rounded-top-5"
+                    alt="catagoryimage"
+                  />
+                </div>
+                <div
+                  class="card-body py-2 h-25 border-1 d-flex text-center flex-column"
+                >
+                  <h5 class="card-title tc-1">Banana</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="#" class="btn btn-cust w-auto px-2 py-1 block mx-1"
+                      >Add</a
+                    >
+                    <a href="" class="btn btn-cust-2 w-auto px-2 py-1 myx1o"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>

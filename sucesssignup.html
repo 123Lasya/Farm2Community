@@ -13,7 +13,7 @@
     />
     <style>
       html {
-        box-sizing: -box; /* The layout game-changer */
+        box-sizing: border-box; /* The layout game-changer */
         /*max-width: 70ch; /* Magic readable width */
         margin: auto; /* Auto-centering sorcery */
         font-size: 1.05em;
@@ -37,26 +37,42 @@
         text-decoration-color: rgb(242, 187, 7);
         text-decoration-thickness: 15%;
       }
-      .btn-cust {
+      .btn-cust,
+      .btn-cust:hover,
+      .btn-cust:focus,
+      .btn-cust:active,
+      .btn-cust:focus:active {
         border: 3px rgba(5, 66, 5, 0.949) solid;
 
         background-color: rgba(5, 66, 5, 0.949);
         color: rgb(242, 187, 7);
         font-weight: 700;
       }
-      .btn-cust-2 {
+
+      .btn-cust-2,
+      .btn-cust-2:hover,
+      .btn-cust-2:focus,
+      .btn-cust-2:focus:active,
+      .btn-cust-2:active {
         border: 3px rgba(5, 66, 5, 0.949) solid;
         color: rgba(5, 66, 5, 0.949);
         font-weight: 500;
       }
-      .btn-cust-21 {
+      .btn-cust-21,
+      .btn-cust-21:hover,
+      .btn-cust-21:focus,
+      .btn-cust-21:active,
+      .btn-cust-21:focus:active {
         border: 3px rgb(242, 187, 7) solid;
-
         background-color: rgb(242, 187, 7);
         color: rgba(5, 66, 5, 0.949);
         font-weight: 700;
       }
-      .btn-cust-22 {
+      .btn-cust-22,
+      .btn-cust-22:hover,
+      .btn-cust-22:focus,
+      .btn-cust-22:active,
+      .btn-cust-22:focus:active {
         border: 3px rgb(242, 187, 7) solid;
         color: rgb(242, 187, 7);
         font-weight: 500;
@@ -107,50 +123,20 @@
       .zoom-hover:hover img {
         transform: scale(1.1);
       }
-      @keyframes rotate-clockwise {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.41),
+            rgba(0, 0, 0, 0.603)
+          ),
+          url("img-7.jpg"); /* Replace with your image path */
+        background-size: cover; /* Ensures the image covers the entire screen */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        height: 100vh;
       }
 
-      @keyframes rotate-anticlockwise {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(-360deg);
-        }
-      }
-      .custimg {
-        background: linear-gradient(
-          to right,
-          rgba(5, 66, 5, 0.949),
-          rgba(0, 0, 0, 0)
-        );
-        border: 0px solid transparent;
-        border-radius: 50%;
-        margin: 1%;
-        padding: 0px;
-        z-index: 1;
-        animation: rotate-clockwise 6s linear infinite;
-      }
-      .custombg {
-        background: linear-gradient(
-          to right,
-          rgba(242, 187, 7, 0.94),
-          rgba(242, 187, 7, 0.53)
-        );
-        border: 0px solid transparent;
-        border-radius: 50%;
-        margin: 1%;
-        padding: 4px;
-        animation: rotate-anticlockwise 6s linear infinite;
-      }
-      .backroundimg {
-        background: url("");
+      .cr {
+        background: linear-gradient(rgba(0, 0, 0, 0.764), rgba(0, 0, 0, 0.741));
       }
     </style>
   </head>
@@ -162,7 +148,7 @@
       >
         <div class="container-fluid">
           <div class="d-flex flex-row">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="index.html"
               ><img src="tlogo.png" alt="" height="55px" width="55px" class=""
             /></a>
             <button
@@ -195,7 +181,7 @@
                 <a
                   class="nav-link text-dark fw-bold"
                   aria-current="page"
-                  href="#"
+                  href="index.html"
                   >Home</a
                 >
               </li>
@@ -209,16 +195,7 @@
                   >Sign up</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#how"
-                  >How it works</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#contact"
-                  >Contact</a
-                >
-              </li>
+
               <li class="nav-item">
                 <a class="btn btn-cust" href="products.html">Shop Now</a>
               </li>
@@ -227,16 +204,17 @@
         </div>
       </nav>
     </div>
-    <div class="backroundimg bg-black">
-      <div class="text-center p-5">
-        <div class="custombg w-25 h-25 m-auto">
-          <img src="logo.png" alt="" class="custimg w-100 h-100" />
-        </div>
-      </div>
-      <div
-        class="text-light bc-1 bg-opacity-25 position-sticky-buttom position-sticky-bottom text-center p-1"
-      >
-        &copy; 2025 Farm2Community. All rights reserved.
+    <div class="w-100 container-fluid">
+      <div class="w-50 rounded-5 mx-auto p-5 my-5 text-center cr">
+        <img src="tlogo.png" alt="" class="m-1" />
+        <p class="t-cust-2 fw-bolder text-light">
+          Welcome to <br /><span class="tc-2"> Farm2Community!</span>
+        </p>
+        <p class="smalltext text-light">
+          Hi User, thanks for joining us! Fresh, fair, and farm-to-home starts
+          here.
+        </p>
+        <a href="index.html" class="btn btn-cust-21">Go to Home</a>
       </div>
     </div>
     <script
